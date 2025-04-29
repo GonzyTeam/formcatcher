@@ -29,9 +29,7 @@ function getCurrentScriptTag() {
         return null;
  }
 
-// Use the company parameter in your code
-const company = getCompanyParameter();
-console.log("Company parameter value:", company);
+
 
 const testingParameter = getTestingParameter();
 console.log("Testing parameter value: ",testingParameter)
@@ -39,6 +37,10 @@ const testing = testingParameter === "true";
 console.log("Testing value: ", testing);
 
 document.addEventListener("DOMContentLoaded", function() {
+
+			// Use the company parameter in your code
+		const company = getCompanyParameter();
+		console.log("Company parameter value:", company);
 
             function generateUniqueID() {
                 return 'uid-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
