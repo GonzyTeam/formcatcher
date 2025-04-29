@@ -5,7 +5,7 @@ function getCurrentScriptTag() {
         // Look for the script tag that has the src ending with your script's filename
         for (var i = scripts.length - 1; i >= 0; i--) {
             var script = scripts[i];
-            if (script.src.includes('embedded-form-submission')) {
+            if (script.src.includes('gonzyteam/formcatcher')) {
                 return script;
             }
         }
